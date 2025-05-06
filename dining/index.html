@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dining Room Furniture - ShopEasy</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="dining.css">
+    
+    <link rel="icon" type="image/png" href="logooo.png">
+
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>ShopEasy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#categories" class="dropdown-toggle">
+                        <i class="fas fa-th-large"></i> Categories
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="../living-room/index.html">
+                                <i class="fas fa-couch"></i>
+                                <span>Living Room</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../bedroom/index.html">
+                                <i class="fas fa-bed"></i>
+                                <span>Bedroom</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../dining/index.html">
+                                <i class="fas fa-utensils"></i>
+                                <span>Dining</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../office/index.html">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Office</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../outdoor/index.html">
+                                <i class="fas fa-tree"></i>
+                                <span>Outdoor</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../storage/index.html">
+                                <i class="fas fa-box"></i>
+                                <span>Storage</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#products" class="dropdown-toggle">
+                        <i class="fas fa-box-open"></i> Products
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="../index.html#featured">
+                                <i class="fas fa-star"></i>
+                                <span>Featured Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#new-arrivals">
+                                <i class="fas fa-clock"></i>
+                                <span>New Arrivals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#best-sellers">
+                                <i class="fas fa-fire"></i>
+                                <span>Best Sellers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#deals">
+                                <i class="fas fa-tags"></i>
+                                <span>Special Deals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="../index.html#clearance">
+                                <i class="fas fa-percentage"></i>
+                                <span>Clearance Sale</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="../index.html#deals"><i class="fas fa-tags"></i> Deals</a></li>
+                <li><a href="../index.html#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="../index.html#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <a href="../cart/" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Category Header -->
+    <section class="category-header">
+        <div class="category-header-content">
+            <h1>Dining Room Collection</h1>
+            <p>Create the perfect dining experience with our premium collection</p>
+        </div>
+    </section>
+
+    <!-- Products Grid Section -->
+    <section class="products-grid">
+        <div class="filters">
+            <h3>Filters</h3>
+            <div class="filter-group">
+                <h4>Categories</h4>
+                <ul>
+                    <li><a href="#tables">Dining Tables</a></li>
+                    <li><a href="#chairs">Dining Chairs</a></li>
+                    <li><a href="#sets">Complete Sets</a></li>
+                    <li><a href="#storage">Storage Solutions</a></li>
+                </ul>
+            </div>
+            <div class="filter-group">
+                <h4>Price Range</h4>
+                <ul>
+                    <li><a href="#under-500">Under $500</a></li>
+                    <li><a href="#500-1000">$500 - $1000</a></li>
+                    <li><a href="#1000-2000">$1000 - $2000</a></li>
+                    <li><a href="#over-2000">Over $2000</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="products-container">
+            <!-- Modern Dining Chair -->
+            <div class="product-card" data-product-id="dining-chair-001">
+                <div class="product-image">
+                    <img src="../photo/ergonomic_office_chair.jpg" alt="Modern Dining Chair">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Modern Dining Chair</h3>
+                    <p class="product-price">$199.99</p>
+                    <p class="product-description">Elegant dining chair with ergonomic design and premium upholstery.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-chair-001', 'Modern Dining Chair', 199.99, '../images/dining-chair.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Solid Wood Dining Table -->
+            <div class="product-card" data-product-id="dining-table-001">
+                <div class="product-image">
+                    <img src="../photo/solid_wood_dining_table.jpg" alt="Solid Wood Dining Table">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Solid Wood Dining Table</h3>
+                    <p class="product-price">$599.99</p>
+                    <p class="product-description">Handcrafted solid wood dining table with extendable design.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-table-001', 'Solid Wood Dining Table', 599.99, '../images/dining-table.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Complete Dining Set -->
+            <div class="product-card" data-product-id="dining-set-001">
+                <div class="product-image">
+                    <img src="../photo/complete_modern_bedroom_set.jpg" alt="Complete Dining Set">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Complete Dining Set</h3>
+                    <p class="product-price">$1,299.99</p>
+                    <p class="product-description">6-piece dining set with table and matching chairs.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-set-001', 'Complete Dining Set', 1299.99, '../images/dining-set.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Modern Buffet Cabinet -->
+            <div class="product-card" data-product-id="dining-buffet-001">
+                <div class="product-image">
+                    <img src="../photo/solid_wood_dining_table.jpg" alt="Modern Buffet Cabinet">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Modern Buffet Cabinet</h3>
+                    <p class="product-price">$799.99</p>
+                    <p class="product-description">Stylish buffet cabinet with ample storage space.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-buffet-001', 'Modern Buffet Cabinet', 799.99, '../images/dining-buffet.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Classic Dining Chair -->
+            <div class="product-card" data-product-id="dining-chair-002">
+                <div class="product-image">
+                    <img src="../photo/solid_wood_dining_table.jpg" alt="Classic Dining Chair">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Classic Dining Chair</h3>
+                    <p class="product-price">$179.99</p>
+                    <p class="product-description">Timeless design with comfortable padding and sturdy construction.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-chair-002', 'Classic Dining Chair', 179.99, '../images/dining-chair-2.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Glass Dining Table -->
+            <div class="product-card" data-product-id="dining-table-002">
+                <div class="product-image">
+                    <img src="../photo/solid_wood_dining_table.jpg" alt="Glass Dining Table">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Glass Dining Table</h3>
+                    <p class="product-price">$449.99</p>
+                    <p class="product-description">Modern glass table with chrome base and tempered glass top.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-table-002', 'Glass Dining Table', 449.99, '../images/dining-table-2.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Contemporary Dining Set -->
+            <div class="product-card" data-product-id="dining-set-002">
+                <div class="product-image">
+                    <img src="../photo/complete_modern_bedroom_set.jpg" alt="Contemporary Dining Set">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Contemporary Dining Set</h3>
+                    <p class="product-price">$999.99</p>
+                    <p class="product-description">4-piece contemporary dining set with modern design.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-set-002', 'Contemporary Dining Set', 999.99, '../images/dining-set-2.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Traditional Buffet Cabinet -->
+            <div class="product-card" data-product-id="dining-buffet-002">
+                <div class="product-image">
+                    <img src="../photo/complete_modern_dining_set.jpg" alt="Traditional Buffet Cabinet">
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Traditional Buffet Cabinet</h3>
+                    <p class="product-price">$699.99</p>
+                    <p class="product-description">Classic design with multiple storage compartments.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-buffet-002', 'Traditional Buffet Cabinet', 699.99, '../images/dining-buffet-2.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates and exclusive offers!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ShopEasy is your one-stop destination for premium furniture and home decor. We offer quality products at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="../index.html#products">Products</a></li>
+                    <li><a href="../index.html#categories">Categories</a></li>
+                    <li><a href="../index.html#deals">Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopeasy.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="../js/main.js"></script>
+</body>
+</html> 

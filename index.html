@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShopEasy - Your One-Stop Shop</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Font Awesome for icons -->
+     
+    <link rel="icon" type="image/png" href="photo/logooo.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <nav>
+            <div class="logo">
+                <i class="fas fa-leaf"></i>
+                <h1>ShopEasy</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                <li class="dropdown">
+                    <a href="#categories" class="dropdown-toggle">
+                        <i class="fas fa-th-large"></i> Categories
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="living-room/index.html">
+                                <i class="fas fa-couch"></i>
+                                <span>Living Room</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="bedroom/index.html">
+                                <i class="fas fa-bed"></i>
+                                <span>Bedroom</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="dining/index.html">
+                                <i class="fas fa-utensils"></i>
+                                <span>Dining</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="office/index.html">
+                                <i class="fas fa-briefcase"></i>
+                                <span>Office</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="outdoor/index.html">
+                                <i class="fas fa-tree"></i>
+                                <span>Outdoor</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="storage/index.html">
+                                <i class="fas fa-box"></i>
+                                <span>Storage</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#products" class="dropdown-toggle">
+                        <i class="fas fa-box-open"></i> Products
+                        <i class="fas fa-chevron-down"></i>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="#featured">
+                                <i class="fas fa-star"></i>
+                                <span>Featured Products</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#new-arrivals">
+                                <i class="fas fa-clock"></i>
+                                <span>New Arrivals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#best-sellers">
+                                <i class="fas fa-fire"></i>
+                                <span>Best Sellers</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#deals">
+                                <i class="fas fa-tags"></i>
+                                <span>Special Deals</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#clearance">
+                                <i class="fas fa-percentage"></i>
+                                <span>Clearance Sale</span>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#deals"><i class="fas fa-tags"></i> Deals</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <a href="cart/" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span class="cart-count">0</span>
+            </a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <span class="hero-subtitle">Welcome to ShopEasy</span>
+            <h2>Transform Your Living Space</h2>
+            <p>Discover our curated collection of premium furniture that combines style, comfort, and quality. Create your dream home with pieces that inspire.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="cta-button primary">Shop Now</a>
+                <a href="#categories" class="cta-button secondary">Browse Categories</a>
+            </div>
+            <div class="hero-features">
+                <div class="feature">
+                    <i class="fas fa-truck"></i>
+                    <span>Free Shipping</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-medal"></i>
+                    <span>Quality Guaranteed</span>
+                </div>
+                <div class="feature">
+                    <i class="fas fa-undo"></i>
+                    <span>30-Day Returns</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="featured-products">
+        <h2>Featured Products</h2>
+        <div class="product-grid">
+            <!-- Modern Sofa -->
+            <div class="product-card" data-product-id="sofa-001">
+                <div class="product-image">
+                    <img src="photo/luxury_3_seater_sofa.jpg" alt="Modern Sofa">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Modern Minimalist Sofa</h3>
+                    <p class="product-price">$899.99</p>
+                    <p class="product-description">Elegant and comfortable 3-seater sofa with premium fabric upholstery.</p>
+                    <button class="add-to-cart" onclick="addToCart('sofa-001', 'Modern Minimalist Sofa', 899.99, 'images/sofa.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Dining Table -->
+            <div class="product-card" data-product-id="table-001">
+                <div class="product-image">
+                    <img src="photo/complete_modern_dining_set.jpg" alt="Dining Table">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Solid Wood Dining Table</h3>
+                    <p class="product-price">$599.99</p>
+                    <p class="product-description">Handcrafted solid wood dining table seats 6-8 people.</p>
+                    <button class="add-to-cart" onclick="addToCart('table-001', 'Solid Wood Dining Table', 599.99, 'images/dining-table.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Bed Frame -->
+            <div class="product-card" data-product-id="bed-001">
+                <div class="product-image">
+                    <img src="photo/queen_size_bed_frame.jpg" alt="Bed Frame">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Queen Size Bed Frame</h3>
+                    <p class="product-price">$799.99</p>
+                    <p class="product-description">Modern platform bed frame with built-in storage.</p>
+                    <button class="add-to-cart" onclick="addToCart('bed-001', 'Queen Size Bed Frame', 799.99, 'images/bed.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Office Chair -->
+            <div class="product-card" data-product-id="chair-001">
+                <div class="product-image">
+                    <img src="photo/ergonomic_office_chair.jpg" alt="Office Chair">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ergonomic Office Chair</h3>
+                    <p class="product-price">$299.99</p>
+                    <p class="product-description">Adjustable ergonomic chair with lumbar support.</p>
+                    <button class="add-to-cart" onclick="addToCart('chair-001', 'Ergonomic Office Chair', 299.99, 'images/chair.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <h2>Shop by Category</h2>
+        <div class="category-grid">
+            <a href="living-room/index.html" class="category-card">
+                <img src="photo/modern_minimalist_living_room.jpg" alt="Living Room">
+                <h3>Living Room</h3>
+            </a>
+            <a href="bedroom/index.html" class="category-card">
+                <img src="photo/complete_modern_bedroom_set.jpg" alt="Bedroom">
+                <h3>Bedroom</h3>
+            </a>
+            <a href="dining/index.html" class="category-card">
+                <img src="photo/complete_modern_dining_set.jpg" alt="Dining">
+                <h3>Dining</h3>
+            </a>
+            <a href="office/index.html" class="category-card">
+                <img src="photo/modern_minimalist_office.jpg" alt="Office">
+                <h3>Office</h3>
+            </a>
+        </div>
+    </section>
+
+    <!-- Special Deals Section -->
+    <section id="deals" class="special-deals">
+        <h2>Special Deals</h2>
+        <div class="promo-code-box">
+            <div class="promo-content">
+                <i class="fas fa-gift"></i>
+                <h3>SPECIAL PROMO CODE!</h3>
+                <p>Use code <span class="promo-code">MARWA</span> to get:</p>
+                <ul>
+                    <li><i class="fas fa-check"></i> Extra 5% Discount</li>
+                    <li><i class="fas fa-check"></i> Free Shipping</li>
+                </ul>
+            </div>
+        </div>
+        <div class="deals-grid">
+            <!-- Deal 1 -->
+            <div class="product-card deal-card" data-product-id="sofa-002">
+                <div class="product-image">
+                    <img src="photo/luxury_3_seater_sofa.jpg" alt="Luxury Sofa">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                    <div class="discount-badge">-25%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Luxury 3-Seater Sofa</h3>
+                    <div class="price-container">
+                        <p class="product-price">$1,199.99</p>
+                        <p class="original-price">$1,599.99</p>
+                    </div>
+                    <p class="product-description">Premium leather sofa with power reclining seats and USB ports.</p>
+                    <button class="add-to-cart" onclick="addToCart('sofa-002', 'Luxury 3-Seater Sofa', 1199.99, 'images/sofa-deal.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Deal 2 -->
+            <div class="product-card deal-card" data-product-id="bed-002">
+                <div class="product-image">
+                    <img src="photo/queen_size_bed_frame.jpg" alt="Queen Bed">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                    <div class="discount-badge">-30%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Queen Size Memory Foam Bed</h3>
+                    <div class="price-container">
+                        <p class="product-price">$899.99</p>
+                        <p class="original-price">$1,299.99</p>
+                    </div>
+                    <p class="product-description">Memory foam mattress with cooling technology and adjustable base.</p>
+                    <button class="add-to-cart" onclick="addToCart('bed-002', 'Queen Size Memory Foam Bed', 899.99, 'images/bed-deal.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Deal 3 -->
+            <div class="product-card deal-card" data-product-id="dining-001">
+                <div class="product-image">
+                    <img src="photo/complete_modern_dining_set.jpg" alt="Dining Set">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                    <div class="discount-badge">-20%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Complete Dining Set</h3>
+                    <div class="price-container">
+                        <p class="product-price">$1,499.99</p>
+                        <p class="original-price">$1,899.99</p>
+                    </div>
+                    <p class="product-description">6-piece dining set with extendable table and upholstered chairs.</p>
+                    <button class="add-to-cart" onclick="addToCart('dining-001', 'Complete Dining Set', 1499.99, 'images/dining-deal.jpg')">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Deal 4 -->
+            <div class="product-card deal-card" data-product-id="chair-002">
+                <div class="product-image">
+                    <img src="photo/ergonomic_office_chair.jpg" alt="Office Chair">
+                    <div class="product-overlay">
+                        <button class="quick-view-btn">
+                            <i class="fas fa-eye"></i> Quick View
+                        </button>
+                    </div>
+                    <div class="discount-badge">-15%</div>
+                </div>
+                <div class="product-info">
+                    <h3 class="product-title">Ergonomic Office Chair</h3>
+                    <div class="price-container">
+                        <p class="product-price">$254.99</p>
+                        <p class="original-price">$299.99</p>
+                    </div>
+                    <p class="product-description">Premium ergonomic chair with lumbar support and adjustable features.</p>
+                    <button class="add-to-cart" onclick="addToCart('chair-002', 'Ergonomic Office Chair', 254.99, 'images/office-deal.jpg')">Add to Cart</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="newsletter-content">
+            <h3>Subscribe to Our Newsletter</h3>
+            <p>Get the latest updates and exclusive offers!</p>
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>ShopEasy is your one-stop destination for premium furniture and home decor. We offer quality products at competitive prices.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#deals">Deals</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Email: info@shopeasy.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 ShopEasy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>
